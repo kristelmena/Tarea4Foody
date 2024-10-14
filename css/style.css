@@ -1,0 +1,679 @@
+/********** Template CSS **********/
+:root {
+    --primary: #3CB815;
+    --secondary: #F65005;
+    --light: #F7F8FC;
+    --dark: #111111;
+}
+
+
+/*** Section Header ***/
+.section-header {
+    position: relative;
+    padding-top: 25px;
+    background-color: #dddddd;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin: 0px;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.section-header.text-start::before,
+.section-header.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+.section-header-Pro {
+    position: absolute;
+    padding-top: 15px;
+    background-color: #fff;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+    margin-bottom: -60px;
+}
+
+.section-header-Pro::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 30px;
+    left: 6%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.section-header-Pro::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 40px;
+    left: 7%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.section-header-Pro.text-start::before,
+.section-header-Pro.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+/*Nav*/
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.carousel-caption.d-none.d-md-block {
+    text-align: left;
+    margin-bottom: 250px;
+}
+
+.carousel-caption.d-none.d-md-block h3 {
+    font-size: 60px;
+    width: max-content;
+    white-space: pre-wrap; 
+}
+
+.flex-text {
+    display: flex;
+    flex-direction: column; 
+}
+
+/*Carrusel*/
+.carousel-caption.d-none.d-md-block p {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;    
+    gap: 10px; 
+}
+
+.carousel-caption.d-none.d-md-block p a {
+    border-radius: 90px;
+    padding: 10px 50px;
+    width: auto;
+    height: auto;
+}
+
+/*MejoresFrutas*/
+.MejoresFrutas {
+    display: flex;
+    margin-top: 50px;
+}
+
+.Agricultor {
+flex-direction: row;
+width: 50%;
+height: auto;
+margin-left: 75px;
+margin-top: 15px;
+margin-bottom: 75px;
+}
+
+.Agricultor img {
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.content-Mejora {
+    width: 50%;
+    height: auto;
+    margin-bottom: 100px;
+    margin-left: 550px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.content-Mejora a {
+    border-radius: 90px;
+    margin-top: -15px;
+    padding: 10px 30px;
+    background-color: #3CB815;
+    color: white;
+}
+
+.content-Mejora h1 {
+    margin-top: -390px;
+    flex-direction: row; 
+    font-size: 35px;   
+    gap: 10px; 
+}
+
+/* Nos Caracteriza */
+.Caracteriz {
+    background-color: #dddddd; 
+    text-align: center;
+    width: auto;
+    margin: 0; 
+}
+
+.content-Caracteriz {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap; 
+    position: relative; 
+    top: -300px;
+}
+
+.content-primer, .contente-segun, .content-tercer {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 250px; 
+    max-width: 350px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+.content-primer img, .contente-segun img, .content-tercer img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.content-primer h4, .contente-segun h4, .content-tercer h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content-primer p, .contente-segun p, .content-tercer p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.content-primer a, .contente-segun a, .content-tercer a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #28a745;
+    padding: 0px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Contenedor principal de los productos */
+.Productos {
+    background-color: #f9f9f9;
+}
+
+.section-header-Pro h1 {
+    font-size: 34px;
+    color: #333;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.section-header-Pro p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+/* Menú de categorías (Frutas, Legumbres, etc.) */
+.menu-product {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; 
+    gap: 30px; 
+}
+
+ .content-menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 50px;
+    margin-right: 50px;
+   display: flex;
+    gap: 20px;
+}
+
+.menu-link {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #333; 
+    border: 2px solid #28a745; 
+    border-radius: 5px; 
+    background-color: white; 
+
+}
+
+.menu-link:hover {
+    background-color: #28a745; 
+    color: white; 
+}
+
+
+.product {
+    display: flex;
+    background-color: #fff;
+    flex-flow: row wrap; 
+    gap: 20px; 
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.product-item {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 25%; 
+    height: auto; 
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 50px;
+   
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info .product-name {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.product-info .product-price {
+    font-size: 1.1rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ocupa el 100% del ancho del producto */
+    border-top: 1px solid #e9e9e9; /* Línea superior que separa las acciones del producto */
+    padding-top: 10px;
+
+}
+
+.product-actions .product-link {
+    display: flex;
+    align-items: center; /* Centra verticalmente el ícono y el texto */
+    justify-content: center;
+    text-decoration: none;
+    color: #28a745;
+    font-size: 0.9rem;
+    background-color: transparent; 
+    padding: 10px 40px; 
+    flex: 1; 
+    border-right: 1px solid #e9e9e9; 
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Estilos generales para la sección */
+.visit-farms-section {
+    background-color: #3CB815; 
+    padding: 40px 20px;
+    color: #fff;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Contenedor interno */
+.visit-farms-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    width: 100%;
+    gap: 40px;
+}
+
+/* Título de la sección */
+.visit-farms-title {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+/* Descripción de la sección */
+.visit-farms-description {
+    font-size: 1.2rem; 
+    color: #fff;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 700px; 
+    margin-right: auto;
+}
+
+/* Contenedor del botón */
+.visit-farms-button-container {
+    margin-left: auto;
+    margin-right: 20px; 
+}
+
+/* Estilo del botón */
+.visit-farms-button {
+    display: inline-block;
+    background-color: #F65005;
+    color: white;
+    padding: 15px 40px; 
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px; 
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos generales del Footer */
+.footer {
+    background-color: #111; /* Fondo oscuro */
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-logo {
+    font-size: 28px;
+    color: #3CB815;
+}
+
+.text-secondary {
+    color: #F65005;
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+footer p, footer a {
+    font-size: 16px;
+    color: #f0f0f0;
+    line-height: 1.8;
+}
+
+.btn.btn-link {
+    position: relative;
+    color: #f0f0f0;
+    text-decoration: none;
+    padding-left: 10px; 
+    display: block; 
+    font-size: 16px;
+    line-height: 2;
+}
+
+.btn.btn-link::before {
+    content: "›"; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f0f0f0;
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Ajustes para la sección Mejores Frutas */
+    
+    .MejoresFrutas {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+        padding: 0 20px; 
+    }
+
+    .Agricultor {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px; 
+        text-align: center;
+    }
+
+    .Agricultor img {
+        width: 250px; 
+        margin: 0 auto;
+    }
+
+    .content-Mejora {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 50px; 
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .content-Mejora h1 {
+        margin-top: 0; 
+        font-size: 24px; 
+    }
+
+    .content-Mejora p {
+        font-size: 1rem; 
+        line-height: 1.5;
+    }
+
+    .content-Mejora a {
+        padding: 10px 20px; 
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    /* Ajustes para la sección Nos Caracteriza */
+    .content-Caracteriz {
+        position: relative; 
+        flex-direction: column; 
+        padding: 20px;
+        top: -350px;
+    }
+
+    .content-primer, .contente-segun, .content-tercer {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .content-primer img, .contente-segun img, .content-tercer img {
+        width: 60px; 
+        margin-bottom: 10px;
+    }
+
+    .content-primer h4, .contente-segun h4, .content-tercer h4 {
+        font-size: 1.2rem; 
+    }
+
+    .content-primer p, .contente-segun p, .content-tercer p {
+        font-size: 0.9rem; 
+        margin-bottom: 15px;
+    }
+
+    .content-primer a, .contente-segun a, .content-tercer a {
+        padding: 10px 20px; 
+        font-size: 0.9rem;
+    }
+
+    .section-header-Pro h1 {
+        font-size: 1.8rem; 
+        text-align: left; 
+        margin-top: 35px; 
+        margin-left: 20px; 
+    }
+
+    .section-header-Pro p {
+        font-size: 1rem; 
+        text-align: left; 
+        max-width: 100%; 
+        margin-left: 20px; 
+        margin-bottom: 25px;
+    }
+
+    /* Ajustes para el menú de categorías */
+    .menu-product {
+        justify-content: center; 
+        margin-top: 10px; 
+        width: auto;
+        padding: 0 10px; 
+    }
+
+    .content-menu {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        gap: 5px;
+        margin-top: 165px; 
+    }
+
+    .menu-link {
+        padding: 5px 10px;
+        font-size: 0.9rem; 
+        margin-bottom: 0; 
+        width: auto; 
+        border-radius: 4px; 
+    }
+
+    /* Ajustes para los productos */
+    .product {
+        flex-direction: column; 
+        padding: 20px 10px; 
+    }
+
+    .product-item {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+
+    /* Ajustes para la imagen del producto */
+    .product-image img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    /* Ajustes para la información del producto */
+    .product-info .product-name {
+        font-size: 1.1rem; 
+    }
+
+    .product-info .product-price {
+        font-size: 1rem; 
+    }
+
+    /* Ajustes para las acciones de los productos */
+    .product-actions {
+        flex-direction: column; 
+        width: 100%; 
+        border-top: none; 
+        padding-top: 0; 
+    }
+
+    .product-actions .product-link {
+        border-right: none; 
+        padding: 10px 20px; 
+        font-size: 1rem;
+        margin-bottom: 10px; 
+    }
+
+      /* Estilos generales para la sección */
+      .visit-farms-section {
+        padding: 20px 10px; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: left;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    /* Contenedor interno */
+    .visit-farms-container {
+        flex-direction: column; 
+        gap: 20px; 
+        max-width: 100%; 
+    }
+
+    /* Título de la sección */
+    .visit-farms-title {
+        font-size: 1.8rem; 
+        margin-bottom: 10px; 
+        margin-left: 25px; 
+        text-align: left; 
+        margin-top: 40px;
+    }
+
+    /* Descripción de la sección */
+    .visit-farms-description {
+        font-size: 1rem; 
+        text-align: left; 
+        max-width: 100%; 
+        margin-left: 25px;
+    }
+
+    /* Contenedor del botón */
+    .visit-farms-button-container {
+        margin-left: 0; 
+        margin-right: 0; 
+        text-align: center; 
+    }
+
+    /* Estilo del botón */
+    .visit-farms-button {
+        padding: 10px 20px; 
+        font-size: 1rem; 
+        border-radius: 20px; 
+    }
+}
+
